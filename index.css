@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'ADLaM Display', cursive;
+}
+body{
+    background-color: #242433;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(4,120px);
+    grid-template-rows: minmax(100px, auto) repeat(4,100px);
+}
+
+.container button{
+    padding: 1rem;
+    outline: none;
+    background-color: #ef7c3d;
+    font-weight:700;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: .1rem solid #242433;
+    font-family: 'ADLaM Display', cursive;
+}
+
+.container button:hover{
+    background-color: #3933e1;
+}
+.button-clear,.button-delete{
+    grid-column: span 2;
+}
+.display{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    align-items: flex-end;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    grid-column: 1 / -1;
+}
+.current{
+    color: #fafdf2;
+    font-size: 3rem;
+}
+.previous{
+    color: #a2a2a2;
+    font-size: 1.5rem;
+}
